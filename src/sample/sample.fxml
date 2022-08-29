@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label accessibleRoleDescription="rd " layoutX="113.0" layoutY="14.0" prefHeight="18.0" prefWidth="310.0" text="Database Program" textAlignment="CENTER">
+         <font>
+            <Font name="Consolas" size="31.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="28.0" layoutY="63.0" prefHeight="95.0" prefWidth="134.0" promptText="To insert a record, enter the data below and press the insert button">
+         <font>
+            <Font name="SimSun" size="15.0" />
+         </font></TextArea>
+      <TextField fx:id="txtID" layoutX="169.0" layoutY="178.0" prefHeight="26.0" prefWidth="66.0" />
+      <TextField fx:id="txtName" layoutX="23.0" layoutY="224.0" prefHeight="26.0" prefWidth="454.0" promptText="Name" />
+      <TextField fx:id="txtColor" layoutX="24.0" layoutY="259.0" prefHeight="26.0" prefWidth="454.0" promptText="Color" />
+      <TextField fx:id="txtSize" layoutX="24.0" layoutY="297.0" prefHeight="26.0" prefWidth="454.0" promptText="Size" />
+      <TextField fx:id="txtFamous" layoutX="24.0" layoutY="331.0" prefHeight="26.0" prefWidth="454.0" promptText="Famous for" />
+      <Button fx:id="btnDisplay" layoutX="406.0" layoutY="178.0" mnemonicParsing="false" onAction="#HandleDisplay" prefHeight="26.0" prefWidth="66.0" text="Display" />
+      <Button fx:id="btnDelete" layoutX="95.0" layoutY="178.0" mnemonicParsing="false" onAction="#HandleDelete" prefHeight="26.0" prefWidth="66.0" text="Delete" />
+      <Button fx:id="btnEdit" layoutX="327.0" layoutY="178.0" mnemonicParsing="false" onAction="#HandleEdit" prefHeight="26.0" prefWidth="66.0" text="Edit" />
+      <Button fx:id="btnID" layoutX="246.0" layoutY="178.0" mnemonicParsing="false" onAction="#HandleEnterID" prefHeight="26.0" prefWidth="66.0" text="Enter ID" />
+      <Button fx:id="btnInsert" layoutX="21.0" layoutY="178.0" mnemonicParsing="false" onAction="#HandleInsert" prefHeight="26.0" prefWidth="66.0" text="Insert" />
+      <TextArea layoutX="193.0" layoutY="63.0" prefHeight="95.0" prefWidth="134.0" promptText="To delete a row enter the record ID and press the delete button">
+         <font>
+            <Font name="SimSun" size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea layoutX="348.0" layoutY="63.0" prefHeight="95.0" prefWidth="134.0" promptText="To edit a record, press the enter ID button. Edit the record below and click edit">
+         <font>
+            <Font name="SimSun" size="15.0" />
+         </font>
+      </TextArea>
+      <ListView fx:id="lvData" layoutX="26.0" layoutY="362.0" prefHeight="200.0" prefWidth="454.0" />
+   </children>
+</AnchorPane>
